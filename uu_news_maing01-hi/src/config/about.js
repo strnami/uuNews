@@ -2,8 +2,8 @@ import UU5 from "uu5g04";
 
 export const About = {
   about: {
-    cs: "Demo aplikace je šablona pro vývoj nových aplikací.",
-    en: "Demo application is a template for developing new applications."
+    cs: "Aplikace vytvořená v rámci workshopu pro předmět Architektura cloudových aplikací.",
+    en: "Application within the workshop for the subject Cloud Application Architecture."
   },
   licence: {
     termsOfUse: "https://unicorn.com/tou/your_product",
@@ -20,13 +20,13 @@ export const About = {
     authorities: {
       cs: [
         {
-          name: "Name Surname",
+          name: "Jaroslav Hajný, Michaela Strnadová",
           uri: "https://www.unicorn.com/"
         }
       ],
       en: [
         {
-          name: "Name Surname",
+          name: "Jaroslav Hajný, Michaela Strnadová",
           uri: "https://www.unicorn.com/"
         }
       ]
@@ -34,33 +34,37 @@ export const About = {
   },
   leadingAuthors: [
     {
-      name: "Some Name",
-      uuIdentity: "4-4-1",
+      name: "Jaroslav Hajný",
+      uuIdentity: "24-9547-1",
       role: {
-        en: "Chief Business Architect & Stakeholder"
+        cs: "Manažer teamu",
+        en: "Team Manager, Chief Business Architect & Stakeholder"
       }
     },
     {
-      name: "Other Name",
-      uuIdentity: "4-4-1",
+      name: "Michaela Strnadová",
+      uuIdentity: "25-1614-1",
       role: {
+        cs: "Hlavní vývojář",
         en: "Head of Development"
       }
     }
   ],
   otherAuthors: [
     {
-      name: "Your Name",
-      uuIdentity: "4-4-1",
+      name: "Michal Král",
+      uuIdentity: "25-2540-1",
       role: {
-        en: "Developer"
+        cs: "Pomocná síla",
+        en: "Burden"
       }
     },
     {
-      name: "More Names",
-      uuIdentity: "4-4-1",
+      name: "Igor Nedoma",
+      uuIdentity: "24-9901-1",
       role: {
-        en: "Developer"
+        cs: "Pohřešovaný/Pasivní",
+        en: "Missing Person"
       }
     }
   ],
