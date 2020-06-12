@@ -1,0 +1,25 @@
+{
+  "uuSubAppDataStore": {
+    "primary": {
+      "type": "uuAppObjectStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "newsMain": {
+          "realization": "dao/NewsMainMongo"
+        },
+        "article": {
+          "realization": "dao/NewsArticleMongo", 
+          "maxNoi": 1024
+        },
+        "newspaper": {
+          "realization": "dao/NewsNewspaperMongo",
+          "maxNoi": 128
+        },
+        "topic": {
+          "realization": "dao/NewsTopicMongo",
+          "maxNoi": 128
+        }
+      }
+    }
+  }
+}

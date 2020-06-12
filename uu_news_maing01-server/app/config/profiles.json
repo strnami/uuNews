@@ -1,0 +1,21 @@
+{
+  "{asid}": {
+    "profileList": ["AsidOwner"],
+    "permissionMap": {
+      "{asidOwner}": ["AsidOwner"]
+    },
+    "useCaseMap": {
+    }
+  },
+  "*": {
+    "profileList": ["Authorities", "Executives", "AwidOwner"],
+    "useCaseMap": {
+      "init": ["AwidOwner"],
+      "defaultUve": ["Public"], 
+      "article/create": ["Authorities"],
+      "article/list": ["Public"],
+      "newspaper/update": ["Authorities", "Executives"], 
+      "topic/delete": ["Authorities", "Executives"]
+    }
+  }
+}

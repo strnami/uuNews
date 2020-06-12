@@ -1,0 +1,36 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "init": {
+        "realization": "api/controllers/NewsMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "article/create": {
+        "realization": "api/controllers/NewsArticleController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "article/list": {
+        "realization": "api/controllers/NewsArticleController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "newspaper/update": {
+        "realization": "api/controllers/NewsNewspaperController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "topic/delete": {
+        "realization": "api/controllers/NewsTopicController.delete",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      }
+    }
+  }
+}
