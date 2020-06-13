@@ -9,15 +9,15 @@
         },
         "article": {
           "realization": "dao/NewsArticleMongo", 
-          "maxNoi": 1024
+          "maxNoi": 1000000
         },
         "newspaper": {
           "realization": "dao/NewsNewspaperMongo",
-          "maxNoi": 128
+          "maxNoi": 1000
         },
         "topic": {
           "realization": "dao/NewsTopicMongo",
-          "maxNoi": 128
+          "maxNoi": 1000
         }
       }
     }

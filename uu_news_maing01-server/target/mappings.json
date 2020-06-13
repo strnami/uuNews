@@ -1,0 +1,328 @@
+{
+  "{vendor}-{uuApp}-{uuSubApp}": {
+    "useCaseMap": {
+      "sys/listAuditLogRecordsByTimeAndSpp": {
+        "realization": "uu_appg01_auditlog:api/controllers/SysAuditLogController.listAuditLogRecordsByTimeAndSpp",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/listMyAuditLogRecordsByTime": {
+        "realization": "uu_appg01_auditlog:api/controllers/SysAuditLogController.listMyAuditLogRecordsByTime",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/deleteAuditLogRecordsBeforeTime": {
+        "realization": "uu_appg01_auditlog:api/controllers/SysAuditLogController.deleteAuditLogRecordsBeforeTime",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/getConfiguration": {
+        "realization": "uu_appg01_core-appserver:sys/GetConfiguration.call",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "produces": "application/json"
+      },
+      "sys/getEnvironment": {
+        "realization": "uu_appg01_core-appserver:sys/GetEnvironment.call",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "produces": "application/json"
+      },
+      "sys/getHealth": {
+        "realization": "uu_appg01_core-appserver:sys/GetHealth.call",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "produces": "application/json"
+      },
+      "sys/getStatistics": {
+        "realization": "uu_appg01_core-appserver:sys/GetStatistics.call",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "produces": "application/json"
+      },
+      "sys/resetStatistics": {
+        "realization": "uu_appg01_core-appserver:sys/ResetStatistics.call",
+        "httpMethod": "POST",
+        "type": "CMD",
+        "produces": "application/json"
+      },
+      "sys/getUseCases": {
+        "realization": "uu_appg01_core-appserver:sys/GetUseCases.call",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "produces": "application/json"
+      },
+      "sys/traceMemory": {
+        "realization": "uu_appg01_core-appserver:sys/TraceMemory.call",
+        "httpMethod": "GET",
+        "type": "CMD",
+        "produces": "text/html"
+      },
+      "oidc/initOidcClient": {
+        "realization": "uu_appg01_oidc-cmd:controllers/OidcController.initOidcClient",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "oidc/setAllowedRedirects": {
+        "realization": "uu_appg01_oidc-cmd:controllers/OidcController.setAllowedRedirects",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "oidc/getAllowedRedirects": {
+        "realization": "uu_appg01_oidc-cmd:controllers/OidcController.getAllowedRedirects",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "oidc/getClientId": {
+        "realization": "uu_appg01_oidc-cmd:controllers/OidcController.getClientId",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "oidc/introspect": {
+        "realization": "uu_appg01_oidc-cmd:controllers/OidcController.introspect",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "oidc/callback": {
+        "realization": "uu_appg01_oidc-cmd:controllers/OidcController.callback",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "oidc/refresh": {
+        "realization": "uu_appg01_oidc-cmd:controllers/OidcController.refresh",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "oidc/logout": {
+        "realization": "uu_appg01_oidc-cmd:controllers/OidcController.logout",
+        "httpMethod": "GET",
+        "type": "VUC"
+      },
+      "sys/setAppWorkspaceConfig": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceConfigController.setConfiguration",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/getAppWorkspaceConfig": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceConfigController.getConfiguration",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/clearAppWorkspaceConfig": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceConfigController.clearConfiguration",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/setProfile": {
+        "realization": "uu_appg01_workspace:controllers/SysProfileController.setProfile",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/getProfile": {
+        "realization": "uu_appg01_workspace:controllers/SysProfileController.getProfile",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/listProfiles": {
+        "realization": "uu_appg01_workspace:controllers/SysProfileController.listProfiles",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/createPermission": {
+        "realization": "uu_appg01_workspace:controllers/SysPermissionController.createPermission",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/listPermissions": {
+        "realization": "uu_appg01_workspace:controllers/SysPermissionController.listPermissions",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/deletePermission": {
+        "realization": "uu_appg01_workspace:controllers/SysPermissionController.deletePermission",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/initAppWorkspace": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceController.initAppWorkspace",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/getAppWorkspace": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceController.getAppWorkspace",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/getLicenseOwner": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceController.getLicenseOwner",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/setAppWorkspaceState": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceController.setAppWorkspaceState",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/deleteAppWorkspace": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceController.deleteAppWorkspace",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/getDataStoreStats": {
+        "realization": "uu_appg01_workspace:controllers/SysDataStoreStatsController.getDataStoreStats",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/listDataStoreStats": {
+        "realization": "uu_appg01_workspace:controllers/SysDataStoreStatsController.listDataStoreStats",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/calculateDataStoreStats": {
+        "realization": "uu_appg01_workspace:controllers/SysDataStoreStatsController.calculateDataStoreStats",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/connectArtifact": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceController.connectArtifact",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/setAuthType": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceController.setAuthorizationType",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/setAppRuntimeMode": {
+        "realization": "uu_appg01_workspace:controllers/SysAppRuntimeModeController.setAppRuntimeMode",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/getAppRuntimeMode": {
+        "realization": "uu_appg01_workspace:controllers/SysAppRuntimeModeController.getAppRuntimeMode",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/initApp": {
+        "realization": "uu_appg01_workspace:controllers/SysAppConfigController.initApp",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/setAppConfig": {
+        "realization": "uu_appg01_workspace:controllers/SysAppConfigController.setAppConfig",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/getAppConfig": {
+        "realization": "uu_appg01_workspace:controllers/SysAppConfigController.getAppConfig",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/dump": {
+        "realization": "uu_appg01_workspace:controllers/SysDumpRestoreController.dump",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/restore": {
+        "realization": "uu_appg01_workspace:controllers/SysDumpRestoreController.restore",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/awidDump": {
+        "realization": "uu_appg01_workspace:controllers/SysDumpRestoreController.awidDump",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/awidRestore": {
+        "realization": "uu_appg01_workspace:controllers/SysDumpRestoreController.awidRestore",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/setAwidRuntimeMode": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceController.setAwidRuntimeMode",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/getAwidRuntimeMode": {
+        "realization": "uu_appg01_workspace:controllers/SysAppWorkspaceController.getAwidRuntimeMode",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/appClientToken/initKeys": {
+        "realization": "uu_appg01_workspace:controllers/SysAppClientTokenController.initKeys",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/appClientToken/listKeys": {
+        "realization": "uu_appg01_workspace:controllers/SysAppClientTokenController.listKeys",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/updateProfiles": {
+        "realization": "uu_appg01_workspace:controllers/SysProfileController.updateProfiles",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/dropDataStores": {
+        "realization": "uu_appg01_workspace:controllers/SysDataStoreController.dropDataStores",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/import": {
+        "realization": "uu_appg01_workspace:controllers/SysDumpRestoreController.import",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "sys/listImportMappings": {
+        "realization": "uu_appg01_workspace:controllers/SysDumpRestoreController.listImportMappings",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "sys/deleteImportMappings": {
+        "realization": "uu_appg01_workspace:controllers/SysDumpRestoreController.deleteImportMappings",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "init": {
+        "realization": "api/controllers/NewsMainController.init",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "article/create": {
+        "realization": "api/controllers/NewsArticleController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "article/list": {
+        "realization": "api/controllers/NewsArticleController.list",
+        "httpMethod": "GET",
+        "type": "CMD"
+      },
+      "newspaper/create": {
+        "realization": "api/controllers/NewsNewspaperController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "newspaper/update": {
+        "realization": "api/controllers/NewsNewspaperController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "topic/create": {
+        "realization": "api/controllers/NewsTopicController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "topic/delete": {
+        "realization": "api/controllers/NewsTopicController.delete",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "defaultUve": {
+        "realization": "index.html",
+        "httpMethod": "GET",
+        "type": "UVE"
+      }
+    }
+  }
+}

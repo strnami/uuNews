@@ -16,8 +16,18 @@
         "httpMethod": "GET",
         "type": "CMD"
       },
+      "newspaper/create": {
+        "realization": "api/controllers/NewsNewspaperController.create",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
       "newspaper/update": {
         "realization": "api/controllers/NewsNewspaperController.update",
+        "httpMethod": "POST",
+        "type": "CMD"
+      },
+      "topic/create": {
+        "realization": "api/controllers/NewsTopicController.create",
         "httpMethod": "POST",
         "type": "CMD"
       },
