@@ -7,6 +7,22 @@ class NewsTopicMongo extends UuObjectDao {
     await super.createIndex({awid: 1, visibility: 1});
   }
 
+  async create(uuObject) {
+    return await super.insertOne(uuObject);
+  }
+
+  async get(awid, id) {
+    let filter = {
+      awid: awid,
+      id: id
+    };
+    return await super.findOne(filter);
+  }
+
+  async listByVisibility(awid, visibility, pageInfo = {}) {
+      return await super.find({awid, visibility}, pageInfo);
+  }
+
   async update(uuObject) {
     let filter = {
       awid: uuObject.awid,

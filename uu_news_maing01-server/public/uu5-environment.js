@@ -1,0 +1,2 @@
+var UU5 = window.UU5 || {};
+UU5.Environment = {"uu_app_oidc_backend_available":true,"uuoidc.serverUri":"https://oidc.plus4u.net/uu-oidcg01-main/99923616732452117-4f06dafc03cb4c7f8c155aa53f0e86be","uuoidc.clientId":"uu-oidc:unregistered-client:7c73bab8"};

@@ -1,0 +1,63 @@
+{
+  "maxNoa": 10,
+  "primary": "primary",
+  "uuSubAppDataStore": {
+    "primary": {
+      "type": "uuAppObjectStore",
+      "realization": "MongoDB",
+      "schemaMap": {
+        "newsMain": {
+          "realization": "dao/NewsMainMongo"
+        },
+        "article": {
+          "realization": "dao/NewsArticleMongo",
+          "maxNoi": 1024
+        },
+        "newspaper": {
+          "realization": "dao/NewsNewspaperMongo",
+          "maxNoi": 128
+        },
+        "topic": {
+          "realization": "dao/NewsTopicMongo",
+          "maxNoi": 128
+        },
+        "sysAuditLogRecord": {
+          "realization": "uu_appg01_auditlog:dao/SysAuditLogRecordMongo"
+        },
+        "sysAuditLogConfig": {
+          "realization": "uu_appg01_auditlog:dao/SysAuditLogConfigMongo"
+        },
+        "sysAppWorkspace": {
+          "realization": "uu_appg01_workspace:daos/SysAppWorkspaceMongo",
+          "maxNoi": 1
+        },
+        "sysProfile": {
+          "realization": "uu_appg01_workspace:daos/SysProfileMongo",
+          "maxNoi": 32
+        },
+        "sysPermission": {
+          "realization": "uu_appg01_workspace:daos/SysPermissionMongo",
+          "maxNoi": 1000
+        },
+        "sysAppWorkspaceConfig": {
+          "realization": "uu_appg01_workspace:daos/SysAppWorkspaceConfigMongo",
+          "maxNoi": 1
+        },
+        "sysDataStoreStats": {
+          "realization": "uu_appg01_workspace:daos/SysDataStoreStatsMongo"
+        },
+        "sysAppConfig": {
+          "realization": "uu_appg01_workspace:daos/SysAppConfigMongo",
+          "maxNoi": 1,
+          "asid": true
+        },
+        "sysKeyStore": {
+          "realization": "uu_appg01_workspace:daos/SysKeyStoreMongo"
+        },
+        "sysImportMapping": {
+          "realization": "uu_appg01_workspace:daos/SysImportMappingMongo"
+        }
+      }
+    }
+  }
+}

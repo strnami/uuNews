@@ -12,9 +12,11 @@
     "useCaseMap": {
       "init": ["AwidOwner"],
       "defaultUve": ["Public"], 
-      "article/create": ["Authorities"],
+      "article/create": ["Authorities", "Executives"],
       "article/list": ["Public"],
-      "newspaper/update": ["Authorities", "Executives"], 
+      "newspaper/create": ["Authorities", "Executives"],
+      "newspaper/update": ["Authorities", "Executives"],
+      "topic/create": ["Authorities", "Executives"],
       "topic/delete": ["Authorities", "Executives"]
     }
   }
