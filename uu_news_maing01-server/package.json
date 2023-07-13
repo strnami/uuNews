@@ -5,11 +5,11 @@
   "license": "License Commercial",
   "spec": "nodejs-app; uu_appg01@2.0.0",
   "dependencies": {
-    "uu_appg01_server": "^4.6.0"
+    "uu_appg01_server": "^5.17.2"
   },
   "devDependencies": {
-    "uu_appg01_devkit": "^2.0.0",
-    "uu_appg01_server-test": "^4.6.0"
+    "uu_appg01_devkit": "^5.14.1",
+    "uu_appg01_server-test": "^5.17.2"
   },
   "engines": {
     "node": ">=12.0.0"
