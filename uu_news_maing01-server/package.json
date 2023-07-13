@@ -8,7 +8,7 @@
     "uu_appg01_server": "^4.6.0"
   },
   "devDependencies": {
-    "uu_appg01_devkit": "^2.0.0",
+    "uu_appg01_devkit": "^5.14.1",
     "uu_appg01_server-test": "^4.6.0"
   },
   "engines": {
